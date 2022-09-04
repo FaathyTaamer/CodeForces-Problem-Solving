@@ -1,0 +1,65 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+using namespace std;
+void solve()
+{
+    ll n;
+    cin >> n;
+    ll m = ceil(sqrt(n));
+    deque<int> ans;
+    int mp[100001] = { 0 };
+    for (int i = n - 1; i >= 0; i--)
+    {
+        for (int c = m; c >= 0; c--)
+        {
+            int a = c * c;
+            if (a - i < n && a - i >= 0 && mp[a - i] == 0)
+            {
+                ans.push_front(a - i);
+                mp[a - i] = 1;
+                break;
+            }
+            if (c == 0)
+            {
+                cout << -1 << '\n';
+                return;
+            }
+        }
+    }
+    while (!ans.empty())
+    {
+        cout << ans.front() << ' ';
+        ans.pop_front();
+    }
+    cout << '\n';
+}
+int main()
+{
+    v233Team
+        FIO
+        int t; cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
