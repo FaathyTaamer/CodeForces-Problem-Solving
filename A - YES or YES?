@@ -1,0 +1,52 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+int counter = 0;
+using namespace std;
+
+
+int main()
+{
+    v233Team
+        FIO
+        int t; cin >> t;
+        queue<string> q;
+    while (t--)
+    {
+        string str; cin >> str;
+        if (str == "YES" || str == "yes" || str == "Yes" || str == "YEs" || str == "YeS" || str == "yES" || str == "yEs" || str == "yeS")
+        {
+            string x = "YES";
+            q.push(x);
+        }
+        else
+        {
+            string y = "NO";
+            q.push(y);
+        }
+    }
+        while (!q.empty())
+        {
+            cout<<q.front()<<'\n';
+            q.pop();
+        }
+     
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
