@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+	int n; cin >> n;
+	vector<int> array(n);
+	int s = 0, d = 0;
+	int l = 0, r = n - 1;
+	for (int i = 0; i < n; i++)
+		cin >> array[i];
+	bool flag = true;
+	while (l <= r)
+	{
+		if (array[l] >= array[r])
+		{
+			if (flag)
+				s += array[l];
+			else
+				d += array[l];
+			l++;
+		}
+		else if (array[l] < array[r])
+		{
+			if (flag)
+				s += array[r];
+			else
+				d += array[r];
+			r--;
+		}
+		if (flag)
+			flag = false;
+		else
+			flag = true;
+	}
+	cout << s << " " << d;
+}
+/*
+                            .--,-``-.      .--,-``-.     
+                  ,----,   /   /     '.   /   /     '.   
+                .'   .' \ / ../        ; / ../        ;  
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    ' 
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   : 
+     /.  ./|  ;    |.'  /       \   :   |      \   :   | 
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /  
+  /___/ \: |    /  ;  /         \  \   \       \  \   \  
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   | 
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   : 
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    . 
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;  
+      '---" ;   | .'       \   \     .'   \   \     .'   
+            `---'           `--`-,,-'      `--`-,,-'     
+*/
+ 
