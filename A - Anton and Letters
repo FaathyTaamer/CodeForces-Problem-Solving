@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+using namespace std;
+int counter = 0;
+int main()
+{
+    v233Team
+        FIO
+        string vec; getline(cin, vec);
+    sort(vec.begin(), vec.end());
+    for (int i = 0; i < vec.size(); i++)
+    {
+        if (vec[i] == '{' or vec[i] == '}' or vec[i] == ',' or vec[i] == ' ')
+            continue;
+        else if (vec[i] != vec[i + 1])
+            counter++;
+    }
+        cout << counter;
+    
+}
+
+/*
+                            .--,-``-.      .--,-``-.     
+                  ,----,   /   /     '.   /   /     '.   
+                .'   .' \ / ../        ; / ../        ;  
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    ' 
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   : 
+     /.  ./|  ;    |.'  /       \   :   |      \   :   | 
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /  
+  /___/ \: |    /  ;  /         \  \   \       \  \   \  
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   | 
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   : 
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    . 
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;  
+      '---" ;   | .'       \   \     .'   \   \     .'   
+            `---'           `--`-,,-'      `--`-,,-'     
+*/
+
