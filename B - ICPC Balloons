@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+int counter = 0;
+using namespace std;
+
+
+int main()
+{
+    v233Team
+        FIO
+        int t; cin >> t;
+        queue<string> q;
+    while (t--)
+    {
+        int n; cin >> n;
+        set<char>suiiii;
+        vector<char>chr(n);
+        for (int i = 0; i < chr.size(); i++)
+        {
+            cin >> chr[i];
+            suiiii.insert(chr[i]);
+        }
+        cout << n + suiiii.size() << endl;
+    }
+   
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
