@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+#define long long long
+int counter = 0;
+using namespace std;
+
+int main()
+{
+    v233Team
+        FIO
+        int t;
+    cin >> t;
+    while (t--) {
+        int n, Hour_Before_Sleep, MIN_BeFore_Sleep;
+        cin >> n >> Hour_Before_Sleep >> MIN_BeFore_Sleep;
+        int initial_min = Hour_Before_Sleep * 60 + MIN_BeFore_Sleep;
+        int tim;
+        int m = 10000;
+        int Hour_After_Sleep, MIN_After_Sleep;
+        for (int i = 0; i < n; i++) {
+            cin >> Hour_After_Sleep >> MIN_After_Sleep;
+            tim = Hour_After_Sleep * 60 + MIN_After_Sleep;
+            if (tim < initial_min) {
+                tim += 1440;
+            }
+            if (tim - initial_min < m) {
+                m = tim - initial_min;
+            }
+        }
+        cout << m / 60 << " " << m % 60 << '\n';
+    }
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
