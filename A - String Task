@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+#define long long long
+int counter = 0;
+using namespace std;
+
+int main()
+{
+    v233Team
+        FIO
+        string str; getline(cin, str);
+    for (int i = 0; i < str.length(); i++)
+    {
+        str[i] = tolower(str[i]);
+    }
+    for (int i = 0; i < str.length(); i++)
+    {
+        if (str[i] != 'a'&& str[i] != 'y' && str[i] != 'u' && str[i] != 'i' && str[i] != 'e' && str[i] != 'o')
+        {
+            if (i < str.length())
+            {
+                cout << ".";
+            }
+            cout << str[i];
+        }
+    }
+    
+    
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
