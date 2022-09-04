@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+using namespace std;
+int counter = 0;
+int main()
+{
+	v233Team
+		FIO
+		int pay, burle; cin >> pay >> burle;
+	for (int i = 1;; i++)
+	{
+		counter = pay * i;
+		if (counter % 10 == 0 || counter % 10 == burle)
+		{
+			cout << i;
+		break;	
+		}
+			
+	}
+
+}
+/*
+                            .--,-``-.      .--,-``-.     
+                  ,----,   /   /     '.   /   /     '.   
+                .'   .' \ / ../        ; / ../        ;  
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    ' 
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   : 
+     /.  ./|  ;    |.'  /       \   :   |      \   :   | 
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /  
+  /___/ \: |    /  ;  /         \  \   \       \  \   \  
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   | 
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   : 
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    . 
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;  
+      '---" ;   | .'       \   \     .'   \   \     .'   
+            `---'           `--`-,,-'      `--`-,,-'     
+*/
+ 
