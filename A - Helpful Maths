@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+using namespace std;
+int counter = 0;
+int main()
+{
+    v233Team
+        FIO
+
+        string word; cin >> word;
+    sort(word.begin(), word.end());
+    for (int i = 0; i< word.length(); i++)
+    {
+        if (word[i] != '+')
+        {
+            cout << word[i];
+        if (i + 1 < word.length())
+            cout << '+';
+        }
+    }
+       
+}
+
+/*
+                            .--,-``-.      .--,-``-.     
+                  ,----,   /   /     '.   /   /     '.   
+                .'   .' \ / ../        ; / ../        ;  
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    ' 
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   : 
+     /.  ./|  ;    |.'  /       \   :   |      \   :   | 
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /  
+  /___/ \: |    /  ;  /         \  \   \       \  \   \  
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   | 
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   : 
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    . 
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;  
+      '---" ;   | .'       \   \     .'   \   \     .'   
+            `---'           `--`-,,-'      `--`-,,-'     
+*/
+
