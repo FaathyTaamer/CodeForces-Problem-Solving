@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+using namespace std;
+int main()
+{
+	FIO
+		int n; cin >> n;
+	int police = 0, criminal = 0, z;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> z;
+		if (z == -1)
+		{
+			if (police > 0)
+				police--;
+			else
+				criminal++;
+		}
+		else
+			police += z;
+	}
+	cout << criminal;
+
+}
+/*
+                            .--,-``-.      .--,-``-.     
+                  ,----,   /   /     '.   /   /     '.   
+                .'   .' \ / ../        ; / ../        ;  
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    ' 
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   : 
+     /.  ./|  ;    |.'  /       \   :   |      \   :   | 
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /  
+  /___/ \: |    /  ;  /         \  \   \       \  \   \  
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   | 
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   : 
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    . 
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;  
+      '---" ;   | .'       \   \     .'   \   \     .'   
+            `---'           `--`-,,-'      `--`-,,-'     
+*/
+ 
