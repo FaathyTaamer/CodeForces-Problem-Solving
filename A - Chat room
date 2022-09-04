@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+#define FIO	 ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define ll long long
+#define v233Team
+using namespace std;
+
+int main()
+{
+    v233Team
+        FIO
+     string me,out="hello";
+     int counter=0,j=0;
+     cin>>me;
+     for(int i =0; i <me.size();i++)
+     {
+
+         if(me[i]==out[j])
+         {
+             counter++;
+             j++;
+         }
+         if(counter==5)
+            break;
+     }
+     if(counter==5)cout<<"YES"<<'\n';
+     else cout<<"NO"<<'\n';
+
+}
+
+/*
+                            .--,-``-.      .--,-``-.
+                  ,----,   /   /     '.   /   /     '.
+                .'   .' \ / ../        ; / ../        ;
+              ,----,'    |\ ``\  .`-    '\ ``\  .`-    '
+       .---.  |    :  .  ; \___\/   \   : \___\/   \   :
+     /.  ./|  ;    |.'  /       \   :   |      \   :   |
+   .-' . ' |  `----'/  ;        /  /   /       /  /   /
+  /___/ \: |    /  ;  /         \  \   \       \  \   \
+  .   \  ' .   ;  /  /-,    ___ /   :   |  ___ /   :   |
+   \   \   '  /  /  /.`|   /   /\   /   : /   /\   /   :
+    \   \   ./__;      :  / ,,/  ',-    ./ ,,/  ',-    .
+     \   \ ||   :    .'   \ ''\        ; \ ''\        ;
+      '---" ;   | .'       \   \     .'   \   \     .'
+            `---'           `--`-,,-'      `--`-,,-'
+*/
