@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n; cin >> n;
+	vector<int> arr(n);
+	int c = 0;
+	for (int i = 0; i < arr.size(); i++)
+	{
+		cin >> arr[i];
+		if (arr[i] > 0)
+			c++;
+	}
+	sort(arr.begin(), arr.end());
+	vector<int> a1, a2, a3;
+	int x=0, y=0, z=0,index=1;
+	//a1 nega
+	//a2 pos
+	//a3 zeros
+	a1.push_back(arr[0]);
+	z = 1;
+	if (c == 0)
+	{
+		a2.push_back(arr[1]);
+		a2.push_back(arr[2]);
+		index = 3;
+		
+	}
+
+	for (int i = index; i < arr.size(); i++)
+	{
+		if (arr[i] <= 0)
+		{
+			a3.push_back(arr[i]);
+			
+		}
+		else
+		{
+			a2.push_back(arr[i]);
+			
+		}
+	}
+	cout << a1.size() << " ";
+	for (int i = 0; i < a1.size(); i++) cout << a1[i] << " ";
+	cout << '\n';
+	
+	cout << a2.size() << " ";
+	for (int i = 0; i < a2.size(); i++) cout << a2[i] << " ";
+	cout << '\n';
+
+	cout << a3.size() << " ";
+	for (int i = 0; i < a3.size(); i++) cout << a3[i] << " ";
+	cout << '\n';
+
+}
